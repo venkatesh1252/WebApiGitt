@@ -1,10 +1,10 @@
-﻿app.controller('CustomersController', function ($scope, APIService) {
+﻿app.controller('CustomersController', function ($scope, CustomerService) {
     getAll();
 
     function getAll() {
-        var servCall = APIService.getCustomers();
+        var servCall = CustomerService.getCustomers();
         servCall.then(function (d) {
-            $scope.subscriber = d.data;
+            $scope.Customers = d.data;
         }, function (error) {
             $log.error('Oops! Something went wrong while fetching the data.')
         })

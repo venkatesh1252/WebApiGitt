@@ -1,6 +1,6 @@
-﻿<html ng-app="CustomerModule">
+﻿@*<html ng-app="CustomerModule">*@
 @{
-    ViewBag.Title = "Welcome";
+    ViewBag.Title = "CustomersData";
 }
 
 <style>
@@ -20,7 +20,7 @@
                 <th>phone Number</th>
                 <th>Email</th>
             </tr>
-            <tbody data-ng-repeat="customers in Customer">
+            <tbody data-ng-repeat="customers in Customers">
                 <tr>
                     <td>{{customers.ID}}</td>
                     <td>{{customers.Name}}</td>
@@ -31,9 +31,10 @@
         </table>
     </div>
 </body>
-</html>
+@*</html>*@
 <script src="~/Scripts/angular.js"></script>
 <script src="~/Scripts/angular-route.js"></script>
-<script src="~/Scripts/APIScripts/Module.js"></script>
-<script src="~/Scripts/APIScripts/Service.js"></script>
-<script src="~/Scripts/APIScripts/Controller.js"></script> 
+<script src="~/Scripts/ApiScripts/Module.js"></script>
+<script src="~/Scripts/ApiScripts/Service.js"></script>
+<script src="~/Scripts/ApiScripts/Controller.js"></script>
+<script src="~/Scripts/angular.js"></script>

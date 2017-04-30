@@ -1,5 +1,5 @@
-﻿app.service("APIService", function ($http) {
+﻿app.service("CustomerService", function ($http) {
     this.getCustomers = function () {
-        return $http.get("api/Customer")
+        return $http.get("api/Customers")
     }
 });
