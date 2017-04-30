@@ -1,0 +1,39 @@
+﻿<html ng-app="CustomerModule">
+@{
+    ViewBag.Title = "Welcome";
+}
+
+<style>
+    table, tr, td, th {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<h2>Customers</h2>
+<body data-ng-app="CustomerModule">
+    <div id="Customer" ng-controller="CustomersController">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>phone Number</th>
+                <th>Email</th>
+            </tr>
+            <tbody data-ng-repeat="customers in Customer">
+                <tr>
+                    <td>{{customers.ID}}</td>
+                    <td>{{customers.Name}}</td>
+                    <td>{{customers.phonenu}}</td>
+                    <td>{{customers.Email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/angular-route.js"></script>
+<script src="~/Scripts/APIScripts/Module.js"></script>
+<script src="~/Scripts/APIScripts/Service.js"></script>
+<script src="~/Scripts/APIScripts/Controller.js"></script> 
